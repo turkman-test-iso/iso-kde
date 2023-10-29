@@ -13,5 +13,6 @@ chmod u+s /usr/bin/su /usr/lib64/polkit-1/*
 rc-update add elogind
 rc-update add eudev
 rc-update add fuse
+rc-update add udhcpc
 ymp clean --allow-oem
 exit 0
