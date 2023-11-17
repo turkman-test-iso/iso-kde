@@ -3,6 +3,7 @@
 ymp repo --update --allow-oem --ignore-gpg
 ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem
 ymp it elogind shadow pipewire wireplumber firefox-installer fuse fuse2 --no-emerge --allow-oem
+# install kde
 ymp it @kde --no-emerge --allow-oem
 echo "startplasma-x11" > /data/user/root/.xinitrc
 sed -i "s/#USER/USER/g" /etc/conf.d/xinit
