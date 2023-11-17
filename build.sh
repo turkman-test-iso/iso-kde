@@ -16,7 +16,7 @@ function build(){
     cd ..
     rm -rf $variant$suffix
 }
-for variant in lxde; do
+for variant in kde; do
     for fw in 0 1 ; do
         export FIRMWARE=""
         suffix=""
