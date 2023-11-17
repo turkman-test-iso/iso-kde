@@ -2,11 +2,9 @@
 #X11 install
 ymp repo --update --allow-oem --ignore-gpg
 ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem
-ymp it elogind shadow pipewire wireplumber libtool firefox-installer l3afpad gpicview fuse fuse2 --no-emerge --allow-oem
-# FIXME lxpanel dependency
-ymp it libexif --no-emerge --allow-oem
-ymp it @lxde openbox --no-emerge --allow-oem
-echo "startlxde" > /data/user/root/.xinitrc
+ymp it elogind shadow pipewire wireplumber firefox-installer fuse fuse2 --no-emerge --allow-oem
+ymp it @kde --no-emerge --allow-oem
+echo "startplasma-x11" > /data/user/root/.xinitrc
 sed -i "s/#USER/USER/g" /etc/conf.d/xinit
 echo "tmpfs /tmp tmpfs rw 0 0" > /etc/fstab
 ln -s /proc/mounts /etc/mtab
