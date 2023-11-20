@@ -17,7 +17,7 @@ function build(){
     rm -rf $variant$suffix
 }
 for variant in kde; do
-    for fw in 0 ; do
+    for fw in 0 1 ; do
         export FIRMWARE=""
         suffix=""
         if [[ "$fw" == "1" ]] ; then
