@@ -4,7 +4,7 @@ ymp repo --update --allow-oem --ignore-gpg
 ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem --jobs=1
 ymp it elogind libtool shadow pipewire wireplumber fuse fuse2 --no-emerge --allow-oem --jobs=1
 # install kde
-ymp it @kde.plasma @kde.frameworks dolphin konsole dejavu tzdata --no-emerge --allow-oem --jobs=1
+ymp it @kde.plasma @kde.frameworks dolphin konsole dejavu tzdata --no-emerge --allow-oem
 echo "startplasma-x11" > /data/user/root/.xinitrc
 sed -i "s/#USER/USER/g" /etc/conf.d/xinit
 echo "tmpfs /tmp tmpfs rw 0 0" > /etc/fstab
