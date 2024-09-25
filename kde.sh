@@ -30,8 +30,6 @@ chmod u+s /usr/bin/pkexec /usr/lib64/polkit-1/polkit-agent-helper-1
 echo "/bin/bash" > /etc/shells
 echo "/bin/sh" >> /etc/shells
 echo "/bin/ash" >> /etc/shells
-# remove static libraries
-find / -type f -iname '*.a' -exec rm -f {} \;
 # install wifi and bluetooth
 ymp it wpa_supplicant networkmanager bluez --no-emerge --allow-oem
 # install lightdm
@@ -55,4 +53,6 @@ ymp clean --allow-oem
 # revert hardened bindir
 mkdir -p /usr/local/bin
 chmod 755 /bin /usr/bin /sbin /usr/sbin /usr/local/bin
+# remove static libraries
+find / -type f -iname '*.a' -exec rm -f {} \;
 exit 0
