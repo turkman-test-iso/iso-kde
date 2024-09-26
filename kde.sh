@@ -33,7 +33,7 @@ echo "/bin/ash" >> /etc/shells
 # install wifi and bluetooth
 ymp it wpa_supplicant networkmanager bluez --no-emerge --allow-oem
 # install lightdm
-ymp it lightdm lightdm-gtk-greeter --no-emerge --allow-oem
+ymp it sddm --no-emerge --allow-oem
 # update hicolor icons
 gtk-update-icon-cache /usr/share/icons/hicolor/
 # enable services
