@@ -11,7 +11,7 @@ ymp repo --update --allow-oem --ignore-gpg
 ymp it xinit xorg-server xterm freetype xauth xkbcomp xkeyboard-config @x11.drivers --no-emerge --allow-oem
 ymp it elogind shadow pipewire wireplumber libtool firefox-installer fuse fuse2 --no-emerge --allow-oem
 # install kde
-ymp it @kde.plasma @kde.frameworks dolphin konsole ark dejavu tzdata --no-emerge --allow-oem --jobs=1
+ymp it @kde @kde.plasma @kde.frameworks dolphin konsole ark dejavu tzdata --no-emerge --allow-oem --jobs=1
 # fstab add tmpfs
 echo "tmpfs /tmp tmpfs rw 0 0" > /etc/fstab
 ln -s /proc/mounts /etc/mtab
