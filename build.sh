@@ -21,6 +21,6 @@ function build(){
 }
 for variant in kde; do
     export FIRMWARE=1
-    suffix="-firmware"
+    suffix="-enduser"
     build $variant $suffix
 done
