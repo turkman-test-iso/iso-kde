@@ -1,1 +1,1 @@
-# Turkman Linux KDE ISO 
+# Turkman Linux KDE ISO
