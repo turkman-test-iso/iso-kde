@@ -33,8 +33,6 @@ chmod u+s /usr/bin/pkexec /usr/lib64/polkit-1/polkit-agent-helper-1
 echo "/bin/bash" > /etc/shells
 echo "/bin/sh" >> /etc/shells
 echo "/bin/ash" >> /etc/shells
-# hostname
-echo turkman > /etc/hostname
 # install wifi and bluetooth
 ymp it wpa_supplicant networkmanager bluez --no-emerge --allow-oem
 # install lightdm
